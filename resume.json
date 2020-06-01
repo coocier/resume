@@ -10,7 +10,7 @@
     "email": "wxkwxk000@163.com",
     "wechat": {
       "id": "mondoura",
-      "qrcode": "static/wechat.jpg"
+      "qrcode": "static/wechat.svg"
     },
     "sinaweibo": {
       "id": "coocier",
@@ -20,20 +20,6 @@
       "id": "coocier"
     }
   },
-  "links": [{
-    "type": "repo",
-    "url": "https://github.com/joyeecheung/resume"
-  }, {
-    "type": "pdf",
-    "url": "static/joyeecheung.pdf"
-
-  }, {
-    "type": "zhihu",
-    "url": "http://www.zhihu.com/people/zhang-qiu-yi-27/"
-  }, {
-    "type": "doubanbook",
-    "url": "http://book.douban.com/people/joyee-cheung/"
-  }],
   "education": [{
     "type": "undergraduate",
     "name": "宁波大学科技学院",
@@ -41,7 +27,7 @@
     "start": "2011",
     "end": "2015",
     "honor": [
-      "2012 - 2013 学年度校**二等奖学金**",
+      "2012 - 2013 学年度校**一等奖学金**",
       "2014 - 2015 学年度校**优秀毕业生**"
     ]
   }],
@@ -53,39 +39,15 @@
       "score": "542"
     }],
     "description": [
-      "能流畅阅读英文专业书籍、文档及其他资料",
-      "能够在Github、MDN、Stack Overflow 等社区正常交流"
+      "能流畅阅读英文专业书籍、文档及其他英文资料",
+      "能够在Github、Stack Overflow 等社区正常交流"
     ]
   }],
   "experience": [{
-    "type": "internship",
-    "techtype": "frontend",
-    "place": "成都彩城软件设计有限公司",
-    "start": "15.02",
-    "end": "15.06",
-    "name": "远程前端开发",
-    "description": [
-      "参与公司（现阿里钉钉合作开发团队）主要产品——项目协作软件 `Tower` 的前端功能组件开发",
-      "解决平台系统遗留的 bug 及浏览器兼容问题",
-      "使用 `CoffeeScript` 等技术对通用功能进行组件化封装"
-    ]
-  }, {
     "type": "job",
     "techtype": "frontend",
-    "place": "宁波合创控股P2P网贷",
-    "start": "15.03",
-    "end": "15.12",
-    "name": "前端开发",
-    "description": [
-      "负责公司平台官网功能需求的更新迭代，参与旧项目的重构",
-      "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
-      "基于**ThinkPHP**的MVC设计模式，与后端人员进行数据交互"
-    ]
-  }, {
-    "type": "job",
-    "techtype": "frontend",
-    "place": "杭州心有灵犀互联网金融",
-    "start": "16.04",
+    "place": "杭州心有灵犀互联网金融股份有限公司",
+    "start": "15.08",
     "end": "17.03",
     "name": "前端开发",
     "description": [
@@ -99,7 +61,7 @@
     "techtype": "frontend",
     "place": "中塑在线股份有限公司",
     "start": "17.03",
-    "end": "至今",
+    "end": "18.08",
     "name": "前端开发",
     "description": [
       "负责公司微信端订阅产品的前端整站开发",
@@ -107,17 +69,32 @@
       "结合蚂蚁金服React第三方组件库",
       "实现项目从ES5到ES6的过渡"
     ]
+  },{
+    "type": "job",
+    "techtype": "frontend",
+    "place": "吉利控股集团杭州湾吉利研究院",
+    "start": "18.09",
+    "end": "至今",
+    "name": "前端开发",
+    "description": [
+      "负责企业级ODOO平台前端开发与维护，包括一些定制化组件的开发",
+      "采用React+Hybrid App 模式开发手机端和扫码枪端的资产录入App",
+      "React+Ant+DVA+Redux+Umi模式搭建的多个H5应用，供研究院多个子部门使用",
+      "组织过多场前端方面的知识培训包括（ES6知识，移动端适配，前端前沿探索等）",
+      "参与部门内部的绝大多数的海报，活动页设计工作（Photoshop/Sketch）"
+    ]
   }, {
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
-    "name": "DreamWeather",
+    "name": "杨梅订单实时录入系统",
     "source": "https://github.com/coocier/DreamWeather",
     "description": [
-      "一个用于获取实时天气的 `Chrom Extension`",
-      "使用 `Yeoman` 进行项目初始化的快速构建",
-      "使用 `Bower` 进行各种包管理",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、JS代码语法检测，CSS预处理器加载，代码压缩发布等"
+      "一个方便杨梅期间客户订单快捷录入及订单统计的App",
+      "前端使用 `Umi3.0` 进行项目初始化的快速构建",
+      "前端使用 `React+DVA+Redux` 作为基本技术栈，`ES6+Typescript` 作为基础js配置，采用蚂蚁金服`Antd-Mobile`作为UI框架",
+      "后端使用 `Nodejs+MongoDB` 作为服务端语言和非关系数据库调用",
+      "服务器端使用Now.sh和Netlify进行部署"
     ]
   }],
   "skills": [{
@@ -127,20 +104,20 @@
       "description": [
         "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
         "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准",
+        "掌握目前主流前端框架特点，差异性和使用场景，熟练使用`React/Vue`等框架",
+        "熟悉NodeJS、Webpack、Gulp等前端环境与构建工具，对前端工程化有深入研究",
         "掌握Web前端开发基本技能，熟悉**W3C标准**、**页面布局架构**、**前端语义化**、**浏览器兼容性**、**页面性能**等",
-        "对UI框架**BootStrap**、类库**jQuery**、**模板引擎**、**MV*框架**等有较熟悉的实践和较深刻的感悟",
         "对前端自动化、前后端分离、前端开发流、工作流、Git协同开发等都有较丰富的经验",
-        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`有一定的了解",
-        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
+        "熟悉 `ECMAScript`（`JavaScript`）常用语法，关注前端流行趋势与技术走向"
       ]
     }, {
       "summary": "前端工程实践",
       "description": [
-        "使用 `React` / `RegualrJS` 编写过简单的 CRUD SPA，了解 `VUE` / `React` / `RegualrJS`  及前端 `MV*` 模型",
-        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码",
-        "在项目中使用过 `Sea.js` / `RequireJS` / `Bower` / `WebPack` 等多种模块化解决方案",
-        "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` 等预处理/后处理工具",
-        "日常使用 `Grunt` 、 `Gulp` 、`Webpack`、`Fis3` 改进工作流",
+        "使用 `React` / `Vue` / `RegualrJS` 编写过各类前端应用，了解 `VUE` / `React` / `RegualrJS`  及前端 `MV*` 模型",
+        "在项目中使用过 `Sea.js` / `RequireJS` / `Bower` / `ES6` 等多种模块化解决方案",
+        "在项目中使用过 `Less` / `Sass` / `PostCSS` 等预处理/后处理工具",
+        "熟悉移动端屏幕适配解决方案，rem布局和viewport布局等",
+        "日常使用 `Webpack` 、 `Gulp` 、`Umi`、`Fis3` 等改进工作流",
         "熟练使用 `Git` 或 `SVN` 进行版本控制和代码托管、`Markdown`进行文档编写",
         "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
       ]
@@ -148,20 +125,19 @@
   }, {
     "type": "backend",
     "item": [{
-      "summary": "`ThinkPHP`",
+      "summary": "`NodeJS`",
       "description": [
-        "熟悉ThinkPHP的MVC模式，用该框架给企业进行过整站开发",
-        "了解Mysql、SQLite等数据库的增删改查操作",
-        "在Red Hat上搭建过WordPress博客",
-        "搭建过Magento开源贸易网站，并进行过二次开发"
+        "了解NodeJS基本开发模式，了解REST/GraphQL接口规范",
+        "了解ThinkPHP的MVC模式，用该框架给企业进行过整站开发",
+        "了解MongoDB、Mysql、SQLite等数据库的基本增删改查操作"
       ]
     }]
       }, {
         "type": "miscellaneous",
         "item": [
-          "在SegmentFault发表过原创技术博客，并被官方微博推荐",
-          "熟悉Linux、Windows等多平台开发、熟练使用`Sublime Text3`、`Webstorm`、`Intellij IDEA`等编辑器,也乐于尝试新工具",
-          "能够使用 `Photoshop` / `Axure` 完成简单的设计"
+          "在SegmentFault山积极参与问答贡献，并发表过原创技术博客，并被官方微博推荐",
+          "熟悉Linux、Windows等多平台开发、熟练使用`Webstorm`、`Sublime Text3`、`Visual Code`等编辑器,也乐于尝试新工具",
+          "能够使用 `Photoshop` / `Sketch` 完成简单的设计"
         ]
       }]
   }
