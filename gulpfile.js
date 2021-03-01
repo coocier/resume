@@ -74,8 +74,8 @@ gulp.task('static', function() {
 });
 
 /****************** Build ****************/
-gulp.task('build', gulp.series('jade', 'less-debug', 'static'));
-gulp.task('build-for-deploy', gulp.series('jade', 'less', 'static'));
+gulp.task('build', function (done) {gulp.series('jade', 'less-debug', 'static');done()});
+gulp.task('build-for-deploy', function (done) {gulp.series('jade', 'less', 'static');done()});
 
 /****************** Server ****************/
 gulp.task('serve', function () {
@@ -86,7 +86,7 @@ gulp.task('server', gulp.series('build', 'serve'));
 gulp.task('preview', gulp.series('build-for-deploy', 'serve'));
 
 /****************** Watch ****************/
-gulp.task('watch', function (done) {
+gulp.task('watch', function (done) {  
   gulp.series('server', function() {
     gulp.watch(['./src/**/*.jade', './resume.json', './i18n/**/*.js'],
         ['jade']);
@@ -95,8 +95,9 @@ gulp.task('watch', function (done) {
     gulp.watch('./dist/**/*', function() {
       server.notify.apply(server, arguments);
     });
-    done();
+    done()
   });
+  done();
 
 });
 
